@@ -18,6 +18,31 @@ try {
 var pageTracker = _gat._getTracker("UA-3578529-3");
 pageTracker._trackPageview();
 } catch(err) {}</script>
+<style>
+sub, sup {
+  /* Specified in % so that the sup/sup is the right size relative to the surrounding text */
+  font-size: 75%;
+
+  /* Zero out the line-height so that it doesn't interfere with the positioning that follows */
+  line-height: 0;
+
+  /* Where the magic happens: makes all browsers position the sup/sup properly, relative to the surrounding text */
+  position: relative;
+
+  /* Note that if you're using Eric Meyer's reset.css, this is already set and you can remove this rule */
+  vertical-align: baseline;
+}
+
+sup {
+  /* Move the superscripted text up */
+  top: -0.5em;
+}
+
+sub {
+  /* Move the subscripted text down, but only half as far down as the superscript moved up */
+  bottom: -0.25em;
+}
+</style>
 </head>
 
 <body>
@@ -40,11 +65,11 @@ pageTracker._trackPageview();
 <div id="content">
 <img id="head_photo" src="./images/head-square.png" style="width: 25%; height: 25%" align="left"/>
 <!-- <p><em>Welcome!</em></p> -->
-<p> Staff Research & Development Engineer <br>     
+<p> Principal Architect <br>     
 	Natural Language Processing Department at <a href="http://home.baidu.com/">Baidu Inc.</a>
 </p>
 <br/>
-I am a staff research & development engineer and a tech lead of deep question answering team at <a href="https://nlp.baidu.com/">Baidu NLP</a> since December 2017. Before that, I was a researcher at
+I am a principal architect and a tech lead of deep question answering team at <a href="https://nlp.baidu.com/">Baidu NLP</a> since December 2017. Before that, I was a researcher at
 <a href="https://www.msra.cn/">Microsoft Research Asia</a> (MSRA) from September 2014 to December 2017. I obtained Ph.D. degree in
 computer science from <a href="http://en.hit.edu.cn/">Harbin Institute of Technology</a> (HIT) under the supervision of Prof. <a href="https://www.microsoft.com/en-us/research/people/hon/">Hsiao-Wuen Hon</a> (MSRA), Prof. <a href="http://ir.hit.edu.cn/~tl/">Ting Liu</a> (HIT) and Dr. <a href="https://www.microsoft.com/en-us/research/people/cyl/">Chin-Yew Lin</a> (MSRA) in September 2014. <!-- I
 participated in the joint Ph.D. program of HIT and MSRA, and I was working as a long-term research
@@ -83,6 +108,10 @@ in computer science from Xidian University (XDU) in July 2007. -->
         <b>Please send me emails with your resume (for internships or FTE positions)</b> if you are interested in working with us on <b>question answering and machine reading comprehension</b>. Experiences with machine (incl. but not limited to deep) learning for NLP are preferred.
     </li>
     <li>
+        <strong>Apr 2020</strong>: We released a Chinese dataset namely DuReader<sub>robust</sub> towards evaluating the robustness of
+        machine reading comprehension models <a href="#">[Paper]</a><a href="https://github.com/PaddlePaddle/Research/tree/master/NLP/DuReader-Robust-BASELINE">[Data & Codes]</a>, and we hosted a shared task based on DuReader<sub>robust</sub> <a href="https://aistudio.baidu.com/aistudio/competition/detail/28?isFromCcf=true">[Leaderboard]</a>. 
+    </li>
+    <li>
         Dec 2019: I gave a talk at <a href="https://nips.cc/ExpoConferences/2019/schedule?workshop_id=15">NIPS 2019 Workshop on From Research to Industrial NLP at Baidu
         </a> about <bold>Towards Robust Machine Reading Comprehension in Industrial Applications</bold></a>. 
     </li>
@@ -104,7 +133,7 @@ in computer science from Xidian University (XDU) in July 2007. -->
 <div id="working">
 	<h1>Working Experience</h1>
 	<ul>
-    <li> Staff Research & Development Engineer, Baidu NLP, Dec. 2017 - present </li>
+    <li> Principal Architect, Baidu NLP, Dec. 2017 - present </li>
     <li> Researcher, Microsoft Research Asia, Sep. 2014 - Dec. 2017 </li>
 	<li> Intern, Microsoft Research Asia, Jul. 2009 - Sep. 2014 </li>
 	</ul>
