@@ -1,796 +1,578 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html dir="LTR" lang="en">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<title>Jing Liu's Homepage</title>
-<script type="text/javascript"></script>
-<link rel="stylesheet" media="all" type="text/css"
-      href="style.css"> 
-<meta name="description" content="Jing Liu's homepage">
-<!--[if lte IE 6]><link rel="stylesheet" media="screen" type="text/css" href="ie6.css"><![endif]-->
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-var pageTracker = _gat._getTracker("UA-3578529-3");
-pageTracker._trackPageview();
-} catch(err) {}</script>
-<style>
-sub, sup {
-  /* Specified in % so that the sup/sup is the right size relative to the surrounding text */
-  font-size: 75%;
-
-  /* Zero out the line-height so that it doesn't interfere with the positioning that follows */
-  line-height: 0;
-
-  /* Where the magic happens: makes all browsers position the sup/sup properly, relative to the surrounding text */
-  position: relative;
-
-  /* Note that if you're using Eric Meyer's reset.css, this is already set and you can remove this rule */
-  vertical-align: baseline;
-}
-
-sup {
-  /* Move the superscripted text up */
-  top: -0.5em;
-}
-
-sub {
-  /* Move the subscripted text down, but only half as far down as the superscript moved up */
-  bottom: -0.25em;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jing Liu - Baidu</title>
+  <meta name="description" content="Jing Liu's homepage. Distinguished Architect at Baidu, working on LLM Post-Training, General Agent, Coding Agent, and Deep Search.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>JL</text></svg>">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-<ol id="nav">
-    
-    <li><a class="selected" href="./index.html" title="Home">Home</a></li>
-    <li><a href="#news" title="News">News</a></li>
-    <li><a href="#dat" title="Data">Datasets</a></li>
-    <li><a href="#pub" title="Papers">Papers</a></li>
-	<!-- <li><a href="#pat" title="Patents">Patents</a></li> -->
-    <li><a href="#act" title="Activities">Activities</a></li>
-    <li><a href="#work" title="Working">Working</a></li>
-    <li><a href="#edu" title="Educations">Educations</a></li>
-    <!-- <li><a href="./files/cv.pdf" title="Resume">Resume</a></li> -->
-	<!-- <li><a href="#links" title="Friends">Friends</a></li> -->
-</ol>
 
-<div id="wrapper">
+<!-- ========== Navigation ========== -->
+<nav>
+  <div class="container">
+    <span class="nav-name">Jing Liu</span>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#hiring">Join Us</a>
+      <a href="#publications">Papers</a>
+      <a href="#experience">Experience</a>
+      <a href="#activities">Activities</a>
+      <a href="#datasets">Datasets</a>
+    </div>
+  </div>
+</nav>
 
-<h1 id="fff">
-    <a href="http://legendarydan.github.io" title="Jing Liu's homepage">Jing Liu（刘璟）</a></h1>
+<!-- ========== Hero ========== -->
+<header class="hero">
+  <div class="container">
+    <div class="hero-photo">
+      <img src="./images/head-square.png" alt="Jing Liu">
+    </div>
+    <div class="hero-info">
+      <h1>Jing Liu（刘璟）</h1>
+      <div class="subtitle">Distinguished Architect, Baidu</div>
+      <div class="bio-short">Leading LLM post-training efforts at Baidu, focusing on alignment, general agents, coding agents, and deep search.</div>
+      <div class="hero-links">
+        <a href="mailto:legendarydan@gmail.com"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4l-10 8L2 4"/></svg> Email</a>
+        <a href="https://x.com/legendarydan" target="_blank"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg> X</a>
+        <a href="https://scholar.google.com/citations?user=_NtB74oAAAAJ&hl=en" target="_blank"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg> Scholar</a>
+      </div>
+      <div class="tags">
+        <span class="tag tag-pt">LLM Post-Training</span>
+        <span class="tag tag-pt">RLHF / Alignment</span>
+        <span class="tag tag-pt">Agentic RL</span>
+        <span class="tag tag-pt">Reasoning RL</span>
+        <span class="tag tag-pt">On-Policy Distillation</span>
+        <span class="tag tag-agent">General Agent</span>
+        <span class="tag tag-agent">Coding Agent</span>
+        <span class="tag tag-search">Deep Search</span>
+      </div>
+    </div>
+  </div>
+</header>
 
-<!-- <h1 id="fff"><a href="http://legendarydan.github.io" title="Jing Liu's homepage">
-	Jing Liu (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div id="name_chn"></div>)</a></h1> -->
+<!-- ========== About ========== -->
+<section class="about bg-white" id="about">
+  <div class="container">
+    <h2>About</h2>
+    <p>
+      I lead the LLM Post-Training team at <a href="https://home.baidu.com/">Baidu</a>, where our work spans post-training alignment (RLHF, agentic RL, reasoning RL, reward modeling, on-policy distillation, data curation), general agents (tool use, planning, multi-agent systems), coding agents (SWE agent, WebDev agent), and deep search (deep search, wide search, deep research).
+    </p>
+    <p style="margin-top:12px;">
+      Before joining Baidu in December 2017, I was a researcher at <a href="https://www.msra.cn/">Microsoft Research Asia</a> (MSRA), working on information retrieval, question answering, and knowledge bases. I obtained my Ph.D. in computer science from <a href="http://en.hit.edu.cn/">Harbin Institute of Technology</a> (HIT) under the supervision of Prof. <a href="https://www.microsoft.com/en-us/research/people/hon/">Hsiao-Wuen Hon</a>, Prof. <a href="http://ir.hit.edu.cn/~tl/">Ting Liu</a>, and Dr. <a href="https://www.microsoft.com/en-us/research/people/cyl/">Chin-Yew Lin</a>.
+    </p>
+  </div>
+</section>
 
-<div id="content">
-<img id="head_photo" src="./images/head-square.png" style="width: 25%; height: 25%" align="left"/>
-<!-- <p><em>Welcome!</em></p> -->
-<p> Distinguished Architect <br>     
-	Natural Language Processing Department at <a href="http://home.baidu.com/">Baidu Inc.</a>
-</p>
-<br/>
-I am a distinguished architect at <a href="https://nlp.baidu.com/">Baidu NLP</a> since December 2017, 
-<!-- where I lead a team working on augmented large language models.  -->
-<!-- including autonomous agents, automatic question answering, automated numerical reasoning and theorem proving.  -->
-Before that, I was a researcher at
-<a href="https://www.msra.cn/">Microsoft Research Asia</a> (MSRA) from September 2014 to December 2017. I obtained Ph.D. degree in
-computer science from <a href="http://en.hit.edu.cn/">Harbin Institute of Technology</a> (HIT) under the supervision of Prof. <a href="https://www.microsoft.com/en-us/research/people/hon/">Hsiao-Wuen Hon</a> (MSRA), Prof. <a href="http://ir.hit.edu.cn/~tl/">Ting Liu</a> (HIT) and Dr. <a href="https://www.microsoft.com/en-us/research/people/cyl/">Chin-Yew Lin</a> (MSRA) in September 2014. <!-- I
-participated in the joint Ph.D. program of HIT and MSRA, and I was working as a long-term research
-intern at MSRA from July 2009 to September 2014. I received M.S. degree in computer science from
-HIT under the supervision of Prof. Yu Zhang and Prof. Ting Liu in July 2009. I obtained B.S. degree
-in computer science from Xidian University (XDU) in July 2007. -->
-<!-- My research interests include open-domain question answering, information retrieval and robust natural language processing. -->
-<br/>
-<br/>
-<br/>
-<p>
-	Please contact me via <a>legendarydan (at) gmail (dot) com </a> <br/>
-	My <a href="http://weibo.com/legendarydan">Sina Weibo</a> (in Chinese) and <a href="http://twitter.com/legendarydan">Twitter</a> (in English)
-</p> 
+<!-- ========== Hiring ========== -->
+<section class="hiring" id="hiring">
+  <div class="container">
+    <h2>We Are Hiring</h2>
+    <p class="hiring-intro">
+      The LLM Post-Training team at Baidu is looking for talented engineers and researchers. Both internship and full-time positions are available.
+    </p>
+    <div class="hiring-grid">
+      <div class="hiring-card">
+        <h3>Post-Training</h3>
+        <p>RLHF, agentic RL, reasoning RL, reward modeling, on-policy distillation, data curation</p>
+      </div>
+      <div class="hiring-card">
+        <h3>Coding Agent</h3>
+        <p>SWE agent, WebDev agent</p>
+      </div>
+      <div class="hiring-card">
+        <h3>General Agent</h3>
+        <p>Tool use, planning, multi-agent systems</p>
+      </div>
+      <div class="hiring-card">
+        <h3>Deep Search</h3>
+        <p>Deep search, wide search, deep research</p>
+      </div>
+    </div>
+    <p class="hiring-contact">
+      Interested? Send your resume to <code>legendarydan (at) gmail (dot) com</code>
+    </p>
+  </div>
+</section>
 
-<!-- <div id="person_intro">
+<!-- ========== Selected Publications (2023+) ========== -->
+<section class="publications-selected bg-white" id="publications">
+  <div class="container">
+    <h2>Selected Publications <span style="font-size:0.85rem; font-weight:400; color:#888;">(2023&ndash;present)</span></h2>
 
+    <!-- 2026 -->
+    <div class="year-group">
+      <h3>2026</h3>
 
+      <div class="pub-item">
+        <div class="pub-title"><a href="https://arxiv.org/abs/2508.05100">BEE-RAG: Balanced Entropy Engineering for Retrieval-Augmented Generation</a></div>
+        <span class="pub-venue venue-conf">AAAI 2026</span>
+        <div class="pub-authors">Yuhao Wang, Ruiyang Ren, Yucheng Wang, <strong>Jing Liu</strong>, Wayne Xin Zhao, Hua Wu, Haifeng Wang</div>
+        <div class="pub-links"><a href="https://arxiv.org/abs/2508.05100">[arXiv]</a></div>
+      </div>
+    </div>
 
-</div> -->
+    <!-- 2025 -->
+    <div class="year-group">
+      <h3>2025</h3>
 
-<div id="clear"></div>
+      <div class="pub-item">
+        <div class="pub-title"><a href="https://arxiv.org/abs/2505.20825">Reinforced Informativeness Optimization for Long-Form Retrieval-Augmented Generation</a></div>
+        <span class="pub-venue venue-preprint">Preprint</span>
+        <div class="pub-authors">Yuhao Wang, Ruiyang Ren, Yucheng Wang, Wayne Xin Zhao, <strong>Jing Liu</strong>, Hua Wu, Haifeng Wang</div>
+        <div class="pub-links"><a href="https://arxiv.org/abs/2505.20825">[arXiv]</a></div>
+      </div>
 
-<!-- <h1>News</h1>
-<ul>
-	<li>
-		<img valign="top" src="images/new.gif" width="40" border="0">
-		I have successfully defended my Ph.D. dissertation and I will join Microsoft Research Asia in September, 2014. 
-		<div id="clear"></div>
-	</li>
-</ul> -->
+      <div class="pub-item">
+        <div class="pub-title"><a href="https://arxiv.org/abs/2505.11995">Unveiling Knowledge Utilization Mechanisms in LLM-based Retrieval-Augmented Generation</a></div>
+        <span class="pub-venue venue-conf">SIGIR 2025</span>
+        <div class="pub-authors">Yuhao Wang, Ruiyang Ren, Yucheng Wang, Wayne Xin Zhao, <strong>Jing Liu</strong>, Hua Wu, Haifeng Wang</div>
+        <div class="pub-links"><a href="https://arxiv.org/abs/2505.11995">[arXiv]</a></div>
+      </div>
 
-<a name="news"></a>
-<div id="news">
-<h1>News</h1>
-<ul>
-    <li>
-        <b>Please send me emails with your resume (for internships or FTE positions)</b> if you are interested in working with us on <b>augmented large language models, including autonomous agents, question answering, automated numerical reasoning and theorem proving</b>. Experiences with machine (incl. but not limited to deep) learning for NLP are preferred.
-    </li>
-    <!-- <li>
-        <strong>Nov 2021</strong>: The <a href="https://github.com/PaddlePaddle/RocketQA">[codes and models]</a> of <strong><a href="https://aclanthology.org/2021.emnlp-main.224.pdf">RocketQAv2</a></strong> for dense retrieval have been released at github (<a href="https://github.com/PaddlePaddle/RocketQA">repo</a>).
-    </li> -->
-    <!-- <li>
-        <strong>Sep 2021</strong>: We released a Chinese dataset namely <strong>DuQM</strong> <a href="https://arxiv.org/pdf/2112.08609.pdf">[paper]</a><a href="https://www.luge.ai/#/luge/dataDetail?id=27">[data]</a><a href="https://github.com/baidu/DuReader/tree/master/DuQM">[code/models]</a> focus on challenging the question matching models from multiple aspects, including lexical semantics, syntactic structure, misspelling and speech filler. We hosted a shared task of DuQM <a href="https://datafountain.cn/competitions/516/ranking?isRedance=0&sch=1809">[leaderboard]</a> at <a href="https://www.datafountain.cn/special/BDCI2021">2021 CCF Big Data & Computing Intelligence Contest</a>, and there were more than 4,000 registered teams and more than 9,000 submissions in the shared task. The shared task was featured in <a href="https://mp.weixin.qq.com/s/IozyUMvW9lJ9RLQeVNKhow">zh-cn</a>. 
-    </li> -->
-    <li>
-        <strong>May 2023</strong>: Our work on generative retrieval <strong><a href="#tome">📚 TOME</a></strong> was accepted by ACL 2023. 
-    </li>
-    <li>
-        <!-- <img valign="top" src="images/new.gif" width="40" border="0"> -->
-        <strong>Oct 2022</strong>: 
-        <strong><a href="#dureaderretrieval">DuReader<sub>retrieval</sub></a></strong>
-         and 
-         <strong><a href="#duqm">DuQM</a></strong> were accepted by EMNLP 2022. 
-    </li>
-    <li>
-        <strong>Mar 2022</strong>: We released a large-scale Chinese dataset <strong><a href="#dureaderretrieval">DuReader<sub>retrieval</sub></a></strong> for passage retrieval. 
-    </li>
-    <!-- <li>
-        <img valign="top" src="images/new.gif" width="40" border="0">
-        <strong>Feb 2022</strong>: <strong><a href="#dureadervis">DuReader<sub>vis</sub></a></strong> was accepted by ACL 2022. 
-    </li> -->
-    <li>
-        <strong>Sep 2021</strong>: We released a dataset <strong><a href="#duqm">DuQM</a></strong> for robust question matching. 
-    </li>
-    <li>
-        <strong>Aug 2021</strong>: <strong><a href="#rocketqav2">🚀 RocketQAv2</a></strong> was accepted by EMNLP 2021. 
-    </li>
-    <li>
-        <strong>Aug 2021</strong>: Dr. Hua Wu and I gave a talk - <strong><a href="https://www.bilibili.com/video/BV1Ug41177dQ">Benchmarks: An Industry Perspective</a></strong> at <a href="https://github.com/kwchurch/Benchmarking_past_present_future/blob/master/README.md">ACL-2021 Workshop on Benchmarking: Past, Present and Future (BPPF)</a>. 
-    </li>
-    <!-- <li>
-        <strong>Aug 2021</strong>: The <a href="https://github.com/PaddlePaddle/Research/tree/master/NLP/ACL2021-PAIR">[codes and models]</a> of <strong><a href="https://aclanthology.org/2021.findings-acl.191.pdf">PAIR</a></strong> for dense retrieval have been released at github (<a href="https://github.com/PaddlePaddle/Research/tree/master/NLP/ACL2021-PAIR">repo</a>). 
-    </li> -->
-    <!-- <li>
-        <strong>Jun 2021</strong>: The <a href="https://github.com/PaddlePaddle/Research/tree/master/NLP/NAACL2021-RocketQA">[codes and models]</a> of <strong><a href="https://arxiv.org/abs/2010.08191">RocketQAv1</a></strong> for dense retrieval have been released at github (<a href="https://github.com/PaddlePaddle/Research/tree/master/NLP/NAACL2021-RocketQA">repo</a>). 
-    </li> -->
-    <li>
-        <strong>May 2021</strong>: 
-        <strong><a href="#pair">💑 PAIR</a></strong>
-         and 
-         <strong><a href="#dureaderrobust">DuReader<sub>robust</sub></a></strong> were accepted by ACL 2021. 
-    </li>
-    <!-- <li>
-        <strong>Apr 2021</strong>: We released a Chinese dataset namely <strong>DuReader<sub>checklist</sub></strong> <a href="https://www.luge.ai/#/luge/dataDetail?id=3">[data]</a><a href="https://github.com/baidu/DuReader/tree/master/DuReader-Checklist">[code/models]</a> focus on challenging the machine reading comprehension models from multiple aspects, including understanding of vocabulary, phrase, semantic role, reasoning and so on. We hosted a shared task of DuReader<sub>checklist</sub> <a href="https://aistudio.baidu.com/aistudio/competition/detail/66">[leaderboard]</a> at <a href="http://lic2021.ccf.org.cn/">2021 Language and Intelligence Challenge</a>, and there were more than 1,080 teams and more than 4,800 submissions in the shared task. The shared task was featured in <a href="https://mp.weixin.qq.com/s/4Gmvohuzwayhfa-MH1pH0g">zh-cn</a>. 
-    </li> -->
-    <li>
-        <strong>Apr 2021</strong>: We released a dataset <strong><a href="#dureaderchecklist">DuReader<sub>checklist</sub></a></strong> for robust machine reading comprehension. 
-    </li>
-    <li>
-        <strong>Mar 2021</strong>: 
-        <strong><a href="#rocketqav1">🚀 RocketQAv1</a></strong>  was accepted by NAACL 2021.  
-    </li>
-    <li>
-        <strong>Oct 2020</strong>: We proposed <strong><a href="#rocketqav1"> RocketQAv1</a></strong>, an optimized training approach to dense passage retrieval for open-domain question answering. RocketQA achieved the 1st rank at the leaderboard of <a href="https://microsoft.github.io/msmarco/#ranking">MSMARCO Passage Ranking Task</a>. 
-        It was featured in <a href="https://mp.weixin.qq.com/s/Oa0fPy4roOveyMU0BsrRhg">zh-cn</a> and <a href="http://research.baidu.com/Blog/index-view?id=148">en-us</a>.
-    </li>
-    <!-- <li>
-        <strong>Aug 2020</strong>: Baidu, CCF (China Computer Federation) and CIPSC (Chinese Information Processing Society of China) jointly lunched the project of <strong>LUGE（千言）</strong><a href="https://luge.ai">[portal]</a>, that is an open-source project of Chinese NLP benchmarks. 
-        Specifically, LUGE aims to provide researchers with various kinds of data sets and comprehensive evaluations, and promotes the progress of Chinese NLP technology. Currently, we have collected more than 20 NLP datasets for 7 tasks from the great contributors of 11 organizations. 
-        LUGE was featured in videos (<a href="https://www.bilibili.com/video/BV1jk4y1y7Y6?from=search&seid=17592121354154345012">zh-cn</a>, <a href="https://www.bilibili.com/video/av800400457/">en-us</a>) and articles (<a href="https://mp.weixin.qq.com/s/oBMCHkUn4emTToT8014Mdg">zh-cn</a>). If you are interested in LUGE, pls. contact me. 
-        Our aim is to promote the advancement of Chinese NLP technologies by the new benchmarks.  LUGE tries to evaluate models beyond just accuracy, in terms of robustness, generalization, multi-task capabilities etc., and cover rich types of tasks, including the tasks of language understanding, language generation and multimodality. 
-    </li> -->
-    <li>
-        <strong>Aug 2020</strong>: We lunched an open-source project of Chinese NLP benchmarks 
-        <strong><a href="#luge">LUGE（千言）</a></strong>. 
-    </li>
-    <!-- <li>
-        <strong>Apr 2020</strong>: We released a Chinese dataset namely <strong>DuReader<sub>robust</sub></strong> <a href="https://arxiv.org/pdf/2004.11142">[paper]</a><a href="https://www.luge.ai/#/luge/dataDetail?id=1">[data]</a><a href="https://github.com/baidu/DuReader/tree/master/DuReader-Robust">[code/models]</a> towards evaluating the robustness of
-        machine reading comprehension models. We hosted a shared task of DuReader<sub>robust</sub> <a href="https://aistudio.baidu.com/aistudio/competition/detail/28?isFromCcf=true">[leaderboard]</a> at <a href="http://lic2020.cipsc.org.cn/">2020 Language and Intelligence Challenge</a>, and there were more than 1,500 teams and more than 4,600 submissions in the shared task. The shared task was featured in <a href="https://m.gmw.cn/toutiao/2020-11/13/content_34367011.htm">zh-cn</a>. 
-    </li> -->
-    <li>
-        <strong>Apr 2020</strong>: We released a dataset 
-        <strong><a href="#dureaderrobust">DuReader<sub>robust</sub></a></strong> for robust machine reading comprehension. 
-    </li>
-    <!-- <li>
-        Dec 2019: I gave a talk at <a href="https://nips.cc/ExpoConferences/2019/schedule?workshop_id=15">NIPS 2019 Workshop on From Research to Industrial NLP at Baidu
-        </a> about <bold>Towards Robust Machine Reading Comprehension in Industrial Applications</bold></a>. 
-    </li> -->
-    <li>
-        
-        <strong>Nov 2019</strong>: Our proposed machine reading comprehension system <strong><a href="#dnet">D-NET</a></strong> was ranked at top 1 in the <a href="https://mrqa.github.io/shared">MRQA 2019 Shared Task</a>, that tests if MRC systems can generalize beyond the datasets on which they were trained. D-NET was featured in zh-cn (<a href="https://mp.weixin.qq.com/s/_eH1JKWNGsRxKi3KPeMOdw"><bold>1</bold></a>, <a href="https://mp.weixin.qq.com/s/2V9oI6A8Ww6VBL2TO43KOQ"><bold>2</bold></a>) and <a href="https://twitter.com/MRQA2019/status/1187857606704095232"><bold>en-us</bold></a>.
-    </li>
-    <!-- <li>
-        May 2019: I gave a talk at <a href="https://nlp.baidu.com/homepage/researchIntro/activityinfo?title=2019%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E5%89%8D%E6%B2%BF%E8%AE%BA%E5%9D%9B">The 2019 Frontier Forum on Natural Language Processing</a> about <a href="https://mp.weixin.qq.com/s/KQPLDhnlxks4DQNZEhEacQ"><bold>The Research and Applications of Machine Reading Comprehension at Baidu</bold></a>. 
-    </li> -->
-</ul>
-</div>
+      <div class="pub-item">
+        <div class="pub-title"><a href="https://arxiv.org/abs/2411.04602">Self-Calibrated Listwise Reranking with Large Language Models</a></div>
+        <span class="pub-venue venue-conf">WWW 2025</span>
+        <div class="pub-authors">Ruiyang Ren, Yuhao Wang, Kun Zhou, Wayne Xin Zhao, Wenjie Wang, <strong>Jing Liu</strong>, Ji-Rong Wen, Tat-Seng Chua</div>
+        <div class="pub-links"><a href="https://arxiv.org/abs/2411.04602">[arXiv]</a></div>
+      </div>
 
-<!-- <h1>Research Interests</h1>
-<ul>
-    <li> Question Answering, Information Extraction and Social Computing</li>
-</ul> -->
+      <div class="pub-item">
+        <div class="pub-title"><a href="https://arxiv.org/abs/2307.11019">Investigating the Factual Knowledge Boundary of Large Language Models with Retrieval Augmentation</a></div>
+        <span class="pub-venue venue-conf">COLING 2025</span>
+        <div class="pub-authors">Ruiyang Ren, Yuhao Wang, Yingqi Qu, Wayne Xin Zhao, <strong>Jing Liu</strong>, Hao Tian, Hua Wu, Ji-Rong Wen, Haifeng Wang</div>
+        <div class="pub-links"><a href="https://arxiv.org/abs/2307.11019">[arXiv]</a></div>
+      </div>
+    </div>
 
-<a name="pub"></a>
-<div id="publication">
+    <!-- 2024 -->
+    <div class="year-group">
+      <h3>2024</h3>
 
-<!-- Publications -->
-<h1>Papers [<a href="http://scholar.google.com/citations?user=_NtB74oAAAAJ&hl=en">Google Scholar</a>]</h1>
+      <div class="pub-item">
+        <div class="pub-title"><a href="https://arxiv.org/abs/2402.17497">REAR: A Relevance-Aware Retrieval-Augmented Framework for Open-Domain Question Answering</a></div>
+        <span class="pub-venue venue-conf">EMNLP 2024</span>
+        <div class="pub-authors">Yuhao Wang, Ruiyang Ren, Junyi Li, Wayne Xin Zhao, <strong>Jing Liu</strong>, Ji-Rong Wen</div>
+        <div class="pub-links"><a href="https://arxiv.org/abs/2402.17497">[arXiv]</a></div>
+      </div>
 
-<ul>
-    <!-- <h2>Conferences & Workshops</h2> -->
-<br>
+      <div class="pub-item">
+        <div class="pub-title"><a href="https://arxiv.org/abs/2402.17505">BASES: Large-scale Web Search User Simulation with Large Language Model based Agents</a></div>
+        <span class="pub-venue venue-conf">EMNLP 2024</span>
+        <div class="pub-authors">Ruiyang Ren, Peng Qiu, Yingqi Qu, <strong>Jing Liu</strong>, Wayne Xin Zhao, Hua Wu, Ji-Rong Wen, Haifeng Wang</div>
+        <div class="pub-links"><a href="https://arxiv.org/abs/2402.17505">[arXiv]</a></div>
+      </div>
 
-<li>
-    <!-- <li><img valign="top" src="images/new.gif" width="40" border="0"> -->
-        <!-- <img valign="top" src="images/new.gif" width="40" border="0"> -->
-        <a name="tome"></a>
-        <img valign="top" src="images/new.gif" width="40" border="0">
-        <em><a href="https://arxiv.org/pdf/2307.11019.pdf">Investigating the Factual Knowledge Boundary of Large Language Models with Retrieval Augmentation
-        </a></em>,  
-        <a href="#">Preprint</a><br>
-        Ruiyang Ren, Yuhao Wang, Yingqi Qu, Wayne Xin Zhao, <strong><u>Jing Liu</u></strong>, Hao Tian, Hua Wu, Ji-Rong Wen, Haifeng Wang<br>
-        <div id="clear"></div>
-    </li>
-    <br>
+      <div class="pub-item">
+        <div class="pub-title"><a href="https://arxiv.org/abs/2211.14876">Dense Text Retrieval based on Pretrained Language Models: A Survey</a></div>
+        <span class="pub-venue venue-journal">ACM TOIS 2024</span>
+        <div class="pub-authors">Wayne Xin Zhao, <strong>Jing Liu</strong>, Ruiyang Ren, Ji-Rong Wen</div>
+        <div class="pub-links"><a href="https://arxiv.org/abs/2211.14876">[arXiv]</a></div>
+      </div>
+    </div>
 
-<li>
-    <!-- <li><img valign="top" src="images/new.gif" width="40" border="0"> -->
-        <!-- <img valign="top" src="images/new.gif" width="40" border="0"> -->
-        <a name="tome"></a>
-        <img valign="top" src="images/new.gif" width="40" border="0">
-        <em><a href="https://arxiv.org/pdf/2305.11161.pdf">TOME: A Two-stage Approach for Model-based Retrieval
-        </a></em>,  
-        <a href="https://2023.aclweb.org/">ACL 2023</a><br>
-        Ruiyang Ren, Wayne Xin Zhao, <strong><u>Jing Liu</u></strong>, Hua Wu, Ji-Rong Wen, Haifeng Wang<br>
-        <div id="clear"></div>
-    </li>
-    <br>
+    <!-- 2023 -->
+    <div class="year-group">
+      <h3>2023</h3>
 
-    <li>
-        <!-- <li><img valign="top" src="images/new.gif" width="40" border="0"> -->
-            <!-- <img valign="top" src="images/new.gif" width="40" border="0"> -->
-            <img valign="top" src="images/new.gif" width="40" border="0">
-            <em><a href="https://arxiv.org/pdf/2305.11161.pdf">SMoA: Sparse Mixture of Adapters to Mitigate Multiple Dataset Biases
-            </a></em>,  
-            <a href="https://trustnlpworkshop.github.io/">ACL 2023 Workshop on Trustworthy Natural Language Processing (TrustNLP)
-            </a><br>
-            Yanchen Liu, Jing Yan, Yan Chen, <strong><u>Jing Liu</u></strong>, Hua Wu<br>
-            <div id="clear"></div>
-        </li>
-        <br>
+      <div class="pub-item">
+        <div class="pub-title"><a href="https://arxiv.org/abs/2305.11161">TOME: A Two-stage Approach for Model-based Retrieval</a></div>
+        <span class="pub-venue venue-conf">ACL 2023</span>
+        <div class="pub-authors">Ruiyang Ren, Wayne Xin Zhao, <strong>Jing Liu</strong>, Hua Wu, Ji-Rong Wen, Haifeng Wang</div>
+        <div class="pub-links"><a href="https://arxiv.org/abs/2305.11161">[arXiv]</a></div>
+      </div>
 
-<li>
-    <!-- <li><img valign="top" src="images/new.gif" width="40" border="0"> -->
-        <!-- <img valign="top" src="images/new.gif" width="40" border="0"> -->
-        <img valign="top" src="images/new.gif" width="40" border="0">
-        <em><a href="https://arxiv.org/pdf/2211.14876.pdf">Dense Text Retrieval based on Pretrained Language Models: A Survey
-        </a></em>,  
-        <a href="#">Preprint</a><br>
-        Wayne Xin Zhao, <strong><u>Jing Liu</u></strong>, Ruiyang Ren, Ji-rong Wen<br>  
-        <div id="clear"></div>
-    </li>
-    <br>
+      <div class="pub-item">
+        <div class="pub-title">SMoA: Sparse Mixture of Adapters to Mitigate Multiple Dataset Biases</div>
+        <span class="pub-venue venue-workshop">ACL 2023 Workshop (TrustNLP)</span>
+        <div class="pub-authors">Yanchen Liu, Jing Yan, Yan Chen, <strong>Jing Liu</strong>, Hua Wu</div>
+      </div>
+    </div>
 
-<li>
-    <!-- <li><img valign="top" src="images/new.gif" width="40" border="0"> -->
-        <!-- <img valign="top" src="images/new.gif" width="40" border="0"> -->
-        <em><a href="https://arxiv.org/pdf/2203.10232.pdf">DuReader<sub>retrieval</sub>: A Large-scale Chinese Benchmark for Passage Retrieval from Web Search Engine
-        </a></em>,  
-        <a href="https://2022.emnlp.org/">EMNLP 2022</a><br>
-        Yifu Qiu, Hongyu Li, Yingqi Qu, Ying Chen, Qiaoqiao She, <strong><u>Jing Liu</u></strong>, Hua Wu, Haifeng Wang<br>  
-        <!-- <a href="#">[data]</a>      
-        <a href="#">[code/models]</a>
-        <a href="#">[regular leaderboard (open)]</a> -->
-        <a href="https://github.com/baidu/DuReader/tree/master/DuReader-Retrieval">[data]</a>
-        <a href="https://github.com/PaddlePaddle/RocketQA/tree/main/research/DuReader-Retrieval-Baseline">[code/models]</a>
-        <a href="https://aistudio.baidu.com/aistudio/competition/detail/427/0/introduction">[regular leaderboard (open)]</a>
-        <a href="https://aistudio.baidu.com/aistudio/competition/detail/157/0/introduction">[LIC2022 - leaderboard (closed)]</a>
-        <div id="clear"></div>
-    </li> 
-    <br>
+    <!-- Toggle older publications -->
+    <button class="toggle-btn" onclick="document.getElementById('older-pubs').classList.toggle('show'); this.textContent = this.textContent === 'Show All Publications (pre-2023)' ? 'Hide Older Publications' : 'Show All Publications (pre-2023)';">
+      Show All Publications (pre-2023)
+    </button>
 
-<li>
-    <!-- <li><img valign="top" src="images/new.gif" width="40" border="0"> -->
-        <!-- <img valign="top" src="images/new.gif" width="40" border="0"> -->
-        <em><a href="https://aclanthology.org/2022.findings-acl.105.pdf">DuReader<sub>vis</sub>: A Chinese Dataset for Open-domain Document Visual Question Answering
-        </a></em>,  
-        <a href="#">Findings of ACL 2022</a><br>
-        Le Qi, Shangwen Lv, Hongyu Li, <strong><u>Jing Liu</u></strong>, Yu Zhang, Qiaoqiao She, Hua Wu, Haifeng Wang, Ting Liu<br>  
-        <a href="https://github.com/baidu/DuReader/tree/master/DuReader-vis">[data]</a> 
-        <!-- <a href="#">[data]</a>      
-        <a href="#">[code/models]</a>
-        <a href="#">[regular leaderboard (open)]</a> -->
-        <div id="clear"></div>
-    </li> 
-    <br>
+    <!-- ========== Older Publications ========== -->
+    <div id="older-pubs" class="older-pubs">
 
-    <li>
-    <!-- <li><img valign="top" src="images/new.gif" width="40" border="0"> -->
-        <em><a href="https://arxiv.org/pdf/2112.08609.pdf">DuQM: A Chinese Dataset of Linguistically Perturbed Natural Questions for Evaluating the Robustness of Question Matching Models
-        </a></em>,  
-        <a href="https://2022.emnlp.org/">EMNLP 2022</a><br>
-        Hongyu Zhu, Yan Chen, Jing Yan, <strong><u>Jing Liu</u></strong>, Yu Hong, Ying Chen, Hua Wu and Haifeng Wang<br>  
-        <a href="https://www.luge.ai/#/luge/dataDetail?id=27">[data]</a>      
-        <a href="https://github.com/baidu/DuReader/tree/master/DuQM">[code/models]</a>
-        <a href="https://aistudio.baidu.com/aistudio/competition/detail/130/0/introduction">[regular leaderboard (open)]</a>
-        <a href="https://www.datafountain.cn/competitions/516">[CCF BDCI 2021 - leaderboard (closed)]</a>
-        <div id="clear"></div>
-    </li> 
-    <br>
+      <!-- 2022 -->
+      <div class="year-group" style="margin-top:28px;">
+        <h3>2022</h3>
 
-    <li>
-    <!-- <li><img valign="top" src="images/new.gif" width="40" border="0"> -->
-        <a name="rocketqav2"></a>
-        <em><a href="https://aclanthology.org/2021.emnlp-main.224.pdf">RocketQAv2: A Joint Training Method for Dense Passage Retrieval and Passage Re-ranking
-        </a></em>,  
-        <a href="https://2021.emnlp.org/">EMNLP 2021</a><br>
-        Ruiyang Ren, Yingqi Qu, <strong><u>Jing Liu</u></strong>, Wayne Xin Zhao, Qiaoqiao She, Hua Wu, Haifeng Wang and Ji-Rong Wen<br>
-        <a href="https://mp.weixin.qq.com/s/1V54GpIHyvDl_te8XFrFqQ">[blog]</a>
-        <a href="https://github.com/PaddlePaddle/RocketQA/tree/main/research/RocketQAv2_EMNLP2021">[code/models]</a>
-        <div id="clear"></div>
-    </li> 
-    <br>
+        <div class="pub-item">
+          <div class="pub-title"><a href="https://arxiv.org/abs/2203.10232">DuReader<sub>retrieval</sub>: A Large-scale Chinese Benchmark for Passage Retrieval from Web Search Engine</a></div>
+          <span class="pub-venue venue-conf">EMNLP 2022</span>
+          <div class="pub-authors">Yifu Qiu, Hongyu Li, Yingqi Qu, Ying Chen, Qiaoqiao She, <strong>Jing Liu</strong>, Hua Wu, Haifeng Wang</div>
+          <div class="pub-links">
+            <a href="https://github.com/baidu/DuReader/tree/master/DuReader-Retrieval">[data]</a>
+            <a href="https://github.com/PaddlePaddle/RocketQA/tree/main/research/DuReader-Retrieval-Baseline">[code]</a>
+          </div>
+        </div>
 
-    <li>
-    <!-- <li><img valign="top" src="images/new.gif" width="40" border="0"> -->
-        <a name="pair"></a>
-        <em><a href="https://aclanthology.org/2021.findings-acl.191.pdf">PAIR: Leveraging Passage-Centric Similarity Relation for Improving Dense Passage Retrieval
-        </a></em>,  
-        <a href="https://2021.aclweb.org/">Findings of ACL 2021</a><br>
-        Ruiyang Ren, Shangwen Lv, Yingqi Qu, <strong><u>Jing Liu</u></strong>, Wayne Xin Zhao, Qiaoqiao She, Hua Wu, Haifeng Wang and Ji-Rong Wen<br>
-        <a href="https://github.com/PaddlePaddle/RocketQA/tree/main/research/PAIR_ACL2021">[code/models]</a>
-        <div id="clear"></div>
-    </li> 
-    <br>
-    
-    <li>
-        <a name="rocketqav1"></a>
-    <!-- <li><img valign="top" src="images/new.gif" width="40" border="0"> -->
-        <em><a href="https://arxiv.org/abs/2010.08191">RocketQA: An Optimized Training Approach to Dense Passage Retrieval for Open-Domain Question Answering</a></em>,  
-        <a href="https://2021.naacl.org/">NAACL 2021</a><br>
-        Yingqi Qu, Yuchen Ding, <strong><u>Jing Liu</u></strong>, Kai Liu, Ruiyang Ren, Wayne Xin Zhao, Daxiang Dong, Hua Wu and Haifeng Wang<br>
-        <a href="https://mp.weixin.qq.com/s/LeVo2WvvTlvpdzDuuTcdfw">[blog]</a>
-        <a href="https://github.com/PaddlePaddle/RocketQA/tree/main/research/RocketQA_NAACL2021">[code/models]</a>
-        <div id="clear"></div>
-    </li> 
-    <br>
+        <div class="pub-item">
+          <div class="pub-title"><a href="https://aclanthology.org/2022.findings-acl.105.pdf">DuReader<sub>vis</sub>: A Chinese Dataset for Open-domain Document Visual Question Answering</a></div>
+          <span class="pub-venue venue-conf">Findings of ACL 2022</span>
+          <div class="pub-authors">Le Qi, Shangwen Lv, Hongyu Li, <strong>Jing Liu</strong>, Yu Zhang, Qiaoqiao She, Hua Wu, Haifeng Wang, Ting Liu</div>
+          <div class="pub-links"><a href="https://github.com/baidu/DuReader/tree/master/DuReader-vis">[data]</a></div>
+        </div>
 
-    <li>
-    <!-- <li><img valign="top" src="images/new.gif" width="40" border="0"> -->
-        <em><a href="https://arxiv.org/pdf/2004.11142">DuReader<sub>robust</sub>: A Chinese Dataset Towards Evaluating Robustness and Generalization of Machine Reading Comprehension in Real-World Applications</a></em>,  
-        <a href="https://2021.aclweb.org/">ACL 2021</a><br>
-        Hongxuan Tang, Hongyu Li, <strong><u>Jing Liu</u></strong>, Yu Hong, Hua Wu and Haifeng Wang<br>
-        <a href="https://www.luge.ai/#/luge/dataDetail?id=1">[data]</a>
-        <a href="https://github.com/baidu/DuReader/tree/master/DuReader-Robust">[code/models]</a>
-        <a href="https://aistudio.baidu.com/aistudio/competition/detail/49/0/task-definition">[regular leaderboard (open)]</a> 
-        <a href="https://aistudio.baidu.com/aistudio/competition/detail/28?isFromCcf=true">[LIC2020 - leaderboard (closed)]</a>
-        <div id="clear"></div>
-    </li> 
-    <br>
+        <div class="pub-item">
+          <div class="pub-title"><a href="https://arxiv.org/abs/2112.08609">DuQM: A Chinese Dataset of Linguistically Perturbed Natural Questions for Evaluating the Robustness of Question Matching Models</a></div>
+          <span class="pub-venue venue-conf">EMNLP 2022</span>
+          <div class="pub-authors">Hongyu Zhu, Yan Chen, Jing Yan, <strong>Jing Liu</strong>, Yu Hong, Ying Chen, Hua Wu, Haifeng Wang</div>
+          <div class="pub-links">
+            <a href="https://www.luge.ai/#/luge/dataDetail?id=27">[data]</a>
+            <a href="https://github.com/baidu/DuReader/tree/master/DuQM">[code]</a>
+          </div>
+        </div>
+      </div>
 
-    <li>
-    <!-- <li><img valign="top" src="images/new.gif" width="40" border="0"> -->
-        <em><a href="https://www.aaai.org/Papers/AAAI/2020GB/AAAI-LiuK.6841.pdf">A Robust Adversarial Training Approach to Machine Reading Comprehension</a></em>,  
-        <a href="https://aaai.org/Conferences/AAAI-20/">AAAI 2020</a><br>
-        Kai Liu, Xin Liu, An Yang, <strong><u>Jing Liu</u></strong>, Jinsong Su, Sujian Li and Qiaoqiao She<br>
-        <div id="clear"></div>
-    </li> 
-    <br>
+      <!-- 2021 -->
+      <div class="year-group">
+        <h3>2021</h3>
 
-    <li>
-        <!-- <li><img valign="top" src="images/new.gif" width="40" border="0"> -->
-            <em><a href="https://arxiv.org/pdf/1911.02168">CoKE: Contextualized Knowledge Graph Embedding</a></em>,  
-            <a href="#">preprint, 2019</a><br>
-            Quan Wang, Pingping Huang, Haifeng Wang, Songtai Dai, Wenbin Jiang, <strong><u>Jing Liu</u></strong>, Yajuan Lyu, Yong Zhu, Hua Wu<br>
-            <a href="https://github.com/PaddlePaddle/Research/tree/master/KG/CoKE">[code/models]</a>
-            <div id="clear"></div>
-        </li> 
-        <br>
+        <div class="pub-item">
+          <div class="pub-title"><a href="https://aclanthology.org/2021.emnlp-main.224.pdf">RocketQAv2: A Joint Training Method for Dense Passage Retrieval and Passage Re-ranking</a></div>
+          <span class="pub-venue venue-conf">EMNLP 2021</span>
+          <div class="pub-authors">Ruiyang Ren, Yingqi Qu, <strong>Jing Liu</strong>, Wayne Xin Zhao, Qiaoqiao She, Hua Wu, Haifeng Wang, Ji-Rong Wen</div>
+          <div class="pub-links">
+            <a href="https://github.com/PaddlePaddle/RocketQA/tree/main/research/RocketQAv2_EMNLP2021">[code]</a>
+          </div>
+        </div>
 
-    <li>
-        <a name="dnet"></a>
-        <!-- <li><img valign="top" src="images/new.gif" width="40" border="0"> -->
-            <em><a href="https://mrqa.github.io/2019/assets/papers/64_Paper.pdf">D-NET: A Simple Framework for Improving the Generalization of Machine Reading Comprehension</a></em>,  
-            <a href="https://mrqa.github.io/2019">EMNLP 2019 Workshop on Machine Reading for Question Answering (MRQA)</a><br>
-            Hongyu Li, Xiyuan Zhang, Yibing Liu, Yiming Zhang, Quan Wang, Xiangyang Zhou, <strong><u>Jing Liu</u></strong>, Hua Wu and Haifeng Wang<br>
-            <a href="https://mp.weixin.qq.com/s/VorMjfji_5Y_bHFXBZFXsg">[blog]</a>
-            <a href="https://github.com/baidu/DuReader/tree/master/MRQA2019-D-NET">[code/models]</a>
-            <a href="https://mrqa.github.io/2019/shared.html">[leaderboard]</a>
-            <div id="clear"></div>
-        </li> 
-        <br>
+        <div class="pub-item">
+          <div class="pub-title"><a href="https://aclanthology.org/2021.findings-acl.191.pdf">PAIR: Leveraging Passage-Centric Similarity Relation for Improving Dense Passage Retrieval</a></div>
+          <span class="pub-venue venue-conf">Findings of ACL 2021</span>
+          <div class="pub-authors">Ruiyang Ren, Shangwen Lv, Yingqi Qu, <strong>Jing Liu</strong>, Wayne Xin Zhao, Qiaoqiao She, Hua Wu, Haifeng Wang, Ji-Rong Wen</div>
+          <div class="pub-links">
+            <a href="https://github.com/PaddlePaddle/RocketQA/tree/main/research/PAIR_ACL2021">[code]</a>
+          </div>
+        </div>
 
-    <li>
-        <!-- <li><img valign="top" src="images/new.gif" width="40" border="0"> -->
-            <em><a href="https://www.aclweb.org/anthology/P19-1226.pdf">Enhancing Pre-trained Language Representations with Rich Knowledge for Machine Reading Comprehension</a></em>,  
-            <a href="http://acl2019.org/">ACL 2019</a><br>
-            An Yang, Quan Wang, <strong><u>Jing Liu</u></strong>, Kai Liu, Yajuan Lyu, Hua Wu, Qiaoqiao She and Sujian Li<br>
-            <a href="https://mp.weixin.qq.com/s/cAAk7l-K_hHMk8_8uT16Xg">[blog]</a>
-            <a href="https://github.com/baidu/DuReader/tree/master/ACL2019-KTNET">[code/models]</a>
-            <div id="clear"></div>
-        </li> 
-        <br>
+        <div class="pub-item">
+          <div class="pub-title"><a href="https://arxiv.org/abs/2010.08191">RocketQA: An Optimized Training Approach to Dense Passage Retrieval for Open-Domain Question Answering</a></div>
+          <span class="pub-venue venue-conf">NAACL 2021</span>
+          <div class="pub-authors">Yingqi Qu, Yuchen Ding, <strong>Jing Liu</strong>, Kai Liu, Ruiyang Ren, Wayne Xin Zhao, Daxiang Dong, Hua Wu, Haifeng Wang</div>
+          <div class="pub-links">
+            <a href="https://github.com/PaddlePaddle/RocketQA/tree/main/research/RocketQA_NAACL2021">[code]</a>
+          </div>
+        </div>
 
-        <li>
-            <!-- <li><img valign="top" src="images/new.gif" width="40" border="0"> -->
-                <em><a href="#">Towards Robust Neural Machine Reading Comprehension via Question Paraphrases</a></em>,  
-                <a href="https://ialp2019.com/">IALP 2019</a><br>
-                Ying Li, Hongyu Li and <strong><u>Jing Liu</u></strong><br>
-                <div id="clear"></div>
-            </li> 
-            <br>
+        <div class="pub-item">
+          <div class="pub-title"><a href="https://arxiv.org/abs/2004.11142">DuReader<sub>robust</sub>: A Chinese Dataset Towards Evaluating Robustness and Generalization of Machine Reading Comprehension in Real-World Applications</a></div>
+          <span class="pub-venue venue-conf">ACL 2021</span>
+          <div class="pub-authors">Hongxuan Tang, Hongyu Li, <strong>Jing Liu</strong>, Yu Hong, Hua Wu, Haifeng Wang</div>
+          <div class="pub-links">
+            <a href="https://github.com/baidu/DuReader/tree/master/DuReader-Robust">[code]</a>
+            <a href="https://www.luge.ai/#/luge/dataDetail?id=1">[data]</a>
+          </div>
+        </div>
+      </div>
 
-    <li>
-        <!-- <li><img valign="top" src="images/new.gif" width="40" border="0"> -->
-            <em><a href="https://arxiv.org/abs/1903.03289">Towards Time-Aware Distant Supervision for Relation Extraction</a></em>,  
-            <a href="#">preprint, 2019</a><br>
-            Tianwen Jiang, Sendong Zhao, <strong><u>Jing Liu</u></strong>, Jin-Ge Yao, Ming Liu, Bing Qin, Ting Liu, Chin-Yew Lin<br>
-            <div id="clear"></div>
-        </li> 
-        <br>
+      <!-- 2020 -->
+      <div class="year-group">
+        <h3>2020</h3>
 
-    <li>
-    <!-- <li><img valign="top" src="images/new.gif" width="40" border="0"> -->
-        <em><a href="http://www.aclweb.org/anthology/D18-1427">Answer-focused and Position-aware Neural Question Generation</a></em>,  
-        <a href="http://emnlp2018.org/">EMNLP 2018</a><br>
-        Xingwu Sun, <strong><u>Jing Liu</u></strong>, Yajuan Lyu, Yanjun Ma and Shi Wang<br>
-        <div id="clear"></div>
-    </li> 
-    <br>
+        <div class="pub-item">
+          <div class="pub-title"><a href="https://www.aaai.org/Papers/AAAI/2020GB/AAAI-LiuK.6841.pdf">A Robust Adversarial Training Approach to Machine Reading Comprehension</a></div>
+          <span class="pub-venue venue-conf">AAAI 2020</span>
+          <div class="pub-authors">Kai Liu, Xin Liu, An Yang, <strong>Jing Liu</strong>, Jinsong Su, Sujian Li, Qiaoqiao She</div>
+        </div>
+      </div>
 
-    <li>
-    <!-- <li><img valign="top" src="images/new.gif" width="40" border="0"> -->
-        <em><a href="http://www.aclweb.org/anthology/K18-1046">Aggregated Semantic Matching for Short Text Entity Linking</a></em>, 
-        <a href="http://www.conll.org/2018">CoNLL 2018</a><br>
-        Feng Nie, Shuyan Zhou, <strong><u>Jing Liu</u></strong>, Jinpeng Wang, Chin-Yew Lin and Rong Pan<br>
-        <div id="clear"></div>
-    </li> 
-    <br>
+      <!-- 2019 -->
+      <div class="year-group">
+        <h3>2019</h3>
 
-    <li>
-        <em><a href="http://aclweb.org/anthology/C18-1018">Neural Math Word Problem Solver with Reinforcement Learning</a></em>, 
-        <a href="http://coling2018.org/">COLING 2018</a><br>
-        Danqing Huang, <strong><u>Jing Liu</u></strong>, Chin-Yew Lin and Jian Yin<br>
-        <div id="clear"></div>
-    </li> 
-    <br>
+        <div class="pub-item">
+          <div class="pub-title"><a href="https://arxiv.org/abs/1911.02168">CoKE: Contextualized Knowledge Graph Embedding</a></div>
+          <span class="pub-venue venue-preprint">Preprint</span>
+          <div class="pub-authors">Quan Wang, Pingping Huang, Haifeng Wang, Songtai Dai, Wenbin Jiang, <strong>Jing Liu</strong>, Yajuan Lyu, Yong Zhu, Hua Wu</div>
+          <div class="pub-links"><a href="https://github.com/PaddlePaddle/Research/tree/master/KG/CoKE">[code]</a></div>
+        </div>
 
-    <li>
-        <em><a href="https://arxiv.org/pdf/1711.05073">DuReader: a Chinese Machine Reading Comprehension Dataset from Real-world Applications</a></em>, 
-        <a href="https://mrqa2018.github.io/">ACL 2018 Workshop on Machine Reading for Question Answering (MRQA)</a><br>
-        Wei He, Kai Liu, <strong><u>Jing Liu</u></strong>, Yajuan Lyu, Shiqi Zhao, Xinyan Xiao, Yuan Liu, Yizhong Wang, Hua Wu, Qiaoqiao She, Xuan Liu, Tian Wu, Haifeng Wang<br>
-        <a href="https://ai.baidu.com//broad/subordinate?dataset=dureader">[data]</a>
-        <a href="https://github.com/baidu/DuReader/tree/master/DuReader-2.0">[code/models]</a>
-        <a href="https://ai.baidu.com/broad/leaderboard?dataset=dureader">[leaderboard (open)]</a>
-        
-        
-        <div id="clear"></div>
-    </li> 
-    <br>
+        <div class="pub-item">
+          <div class="pub-title"><a href="https://mrqa.github.io/2019/assets/papers/64_Paper.pdf">D-NET: A Simple Framework for Improving the Generalization of Machine Reading Comprehension</a></div>
+          <span class="pub-venue venue-workshop">EMNLP 2019 Workshop (MRQA)</span>
+          <div class="pub-authors">Hongyu Li, Xiyuan Zhang, Yibing Liu, Yiming Zhang, Quan Wang, Xiangyang Zhou, <strong>Jing Liu</strong>, Hua Wu, Haifeng Wang</div>
+          <div class="pub-links">
+            <a href="https://github.com/baidu/DuReader/tree/master/MRQA2019-D-NET">[code]</a>
+          </div>
+        </div>
 
-    <li>
-        <em><a href="https://arxiv.org/pdf/1806.03578">Adaptations of ROUGE and BLEU to Better Evaluate Machine Reading Comprehension Task</a></em>, 
-        <a href="https://mrqa2018.github.io/">ACL 2018 Workshop on Machine Reading for Question Answering (MRQA)</a><br>
-        An Yang, Kai Liu, <strong><u>Jing Liu</u></strong>, Yajuan Lyu, Sujian Li<br>
-        <div id="clear"></div>
-    </li>
-    <br>
+        <div class="pub-item">
+          <div class="pub-title"><a href="https://www.aclweb.org/anthology/P19-1226.pdf">Enhancing Pre-trained Language Representations with Rich Knowledge for Machine Reading Comprehension</a></div>
+          <span class="pub-venue venue-conf">ACL 2019</span>
+          <div class="pub-authors">An Yang, Quan Wang, <strong>Jing Liu</strong>, Kai Liu, Yajuan Lyu, Hua Wu, Qiaoqiao She, Sujian Li</div>
+          <div class="pub-links"><a href="https://github.com/baidu/DuReader/tree/master/ACL2019-KTNET">[code]</a></div>
+        </div>
 
-    <li>
-            <em><a href="https://arxiv.org/pdf/1805.02220">Multi-Passage Machine Reading Comprehension with Cross-Passage Answer Verification</a></em>, 
-            <a href="http://acl2018.org/">ACL 2018</a><br>
-            Yizhong Wang, Kai Liu, <strong><u>Jing Liu</u></strong>, Wei He, Yajuan Lyu, Hua Wu, Sujian Li, Haifeng Wang<br>
-            <!-- <a href="#">[pdf]</a> <a href="" >[slides]</a> -->
-            <div id="clear"></div>
-        </li> 
-        <br>
+        <div class="pub-item">
+          <div class="pub-title">Towards Robust Neural Machine Reading Comprehension via Question Paraphrases</div>
+          <span class="pub-venue venue-conf">IALP 2019</span>
+          <div class="pub-authors">Ying Li, Hongyu Li, <strong>Jing Liu</strong></div>
+        </div>
 
-	<li>
-        <em><a href="http://www.lrec-conf.org/proceedings/lrec2018/pdf/414.pdf">Revisiting Distant Supervision for Relation Extraction</a></em>,  
-        <a href="http://lrec2018.lrec-conf.org/">LREC 2018</a><br>
-        Tingsong Jiang, <strong><u>Jing Liu</u></strong> and Chin-Yew Lin<br>
-		<a href="http://aka.ms/relationie">[data]</a>
-        <div id="clear"></div>
-    </li> 
-    <br>
+        <div class="pub-item">
+          <div class="pub-title"><a href="https://arxiv.org/abs/1903.03289">Towards Time-Aware Distant Supervision for Relation Extraction</a></div>
+          <span class="pub-venue venue-preprint">Preprint</span>
+          <div class="pub-authors">Tianwen Jiang, Sendong Zhao, <strong>Jing Liu</strong>, Jin-Ge Yao, Ming Liu, Bing Qin, Ting Liu, Chin-Yew Lin</div>
+        </div>
+      </div>
 
-    <li>
-        <em><a href="http://www.aclweb.org/anthology/I17-2032.pdf">A Statistical Framework for Product Description Generation</a></em>, 
-            <a href="http://ijcnlp2017.org/">IJCNLP 2017</a><br>
-            Jinpeng Wang, Yutai Hou, <strong><u>Jing Liu</u></strong>, Yunbo Cao and Chin-Yew Lin<br>
-            <!-- <a href="#">[pdf]</a> <a href="" >[slides]</a> -->
-            <div id="clear"></div>
-        </li> 
-    <br>
+      <!-- 2018 -->
+      <div class="year-group">
+        <h3>2018</h3>
 
-    <li>
-        <em><a href="http://www.aclweb.org/anthology/P16-1037.pdf">News Citation Recommendation with Implicit and Explicit Semantics</a></em>, 
-            <a href="http://acl2016.org/">ACL 2016</a><br>
-            Hao Peng, <strong><u>Jing Liu</u></strong> and Chin-Yew Lin<br>
-            <!-- <a href="#">[pdf]</a> <a href="" >[slides]</a> -->
-            <div id="clear"></div>
-        </li> 
-    <br>
+        <div class="pub-item">
+          <div class="pub-title"><a href="http://www.aclweb.org/anthology/D18-1427">Answer-focused and Position-aware Neural Question Generation</a></div>
+          <span class="pub-venue venue-conf">EMNLP 2018</span>
+          <div class="pub-authors">Xingwu Sun, <strong>Jing Liu</strong>, Yajuan Lyu, Yanjun Ma, Shi Wang</div>
+        </div>
 
-    <li>
-        <em><a href="http://www.aclweb.org/anthology/P/P16/P16-1124.pdf">Knowledge Base Completion via Coupled Path Ranking</a></em>, 
-            <a href="http://acl2016.org/">ACL 2016</a><br>
-            Quan Wang, <strong><u>Jing Liu</u></strong>, Yuanfei Luo, Bin Wang and Chin-Yew Lin<br>
-            <!-- <a href="#">[pdf]</a> <a href="" >[slides]</a> -->
-            <div id="clear"></div>
-        </li> 
-    <br>
+        <div class="pub-item">
+          <div class="pub-title"><a href="http://www.aclweb.org/anthology/K18-1046">Aggregated Semantic Matching for Short Text Entity Linking</a></div>
+          <span class="pub-venue venue-conf">CoNLL 2018</span>
+          <div class="pub-authors">Feng Nie, Shuyan Zhou, <strong>Jing Liu</strong>, Jinpeng Wang, Chin-Yew Lin, Rong Pan</div>
+        </div>
 
-    <li>
-        <em><a href="http://aclweb.org/anthology/P16-1116.pdf">RBPB: Regularization-Based Pattern Balancing Method for Event Extraction</a></em>
-        <a href="http://acl2016.org/">ACL 2016</a><br>
-            Lei Sha, <strong><u>Jing Liu</u></strong>, Chin-Yew Lin, Sujian Li, Baobao Chang and Zhifang Sui<br>
-            <!-- <a href="#">[pdf]</a> <a href="" >[slides]</a> -->
-            <div id="clear"></div>
-        </li> 
-    <br>
+        <div class="pub-item">
+          <div class="pub-title"><a href="http://aclweb.org/anthology/C18-1018">Neural Math Word Problem Solver with Reinforcement Learning</a></div>
+          <span class="pub-venue venue-conf">COLING 2018</span>
+          <div class="pub-authors">Danqing Huang, <strong>Jing Liu</strong>, Chin-Yew Lin, Jian Yin</div>
+        </div>
 
-    <li>
-        <em><a href="https://jyunyu.csie.org/docs/pubs/cikm2015paper.pdf">Improving Ranking Consistency for Web Search by Leveraging Knowledge Base and Search Logs</a></em>, 
-        <a href="http://cikm-2015.org/">CIKM 2015</a><br>
-        Jyun-Yu Jiang, <strong><u>Jing Liu</u></strong>, Chin-Yew Lin and Pu-Jen Cheng <br>
-		<!-- <a href="#">[pdf]</a> <a href="" >[slides]</a> -->
-        <div id="clear"></div>
-    </li> 
-    <br>
+        <div class="pub-item">
+          <div class="pub-title"><a href="https://arxiv.org/abs/1711.05073">DuReader: a Chinese Machine Reading Comprehension Dataset from Real-world Applications</a></div>
+          <span class="pub-venue venue-workshop">ACL 2018 Workshop (MRQA)</span>
+          <div class="pub-authors">Wei He, Kai Liu, <strong>Jing Liu</strong>, Yajuan Lyu, Shiqi Zhao, Xinyan Xiao, Yuan Liu, Yizhong Wang, Hua Wu, Qiaoqiao She, Xuan Liu, Tian Wu, Haifeng Wang</div>
+          <div class="pub-links">
+            <a href="https://github.com/baidu/DuReader/tree/master/DuReader-2.0">[code]</a>
+          </div>
+        </div>
 
-	<li>
-        <em><a href="http://www.aclweb.org/anthology/D14-1118.pdf">A Regularized Competition Model for Question Difficulty Estimation in Community Question Answering Services</a></em>, <a href="http://emnlp2014.org">EMNLP 2014</a><br>
-        Quan Wang, <strong><u>Jing Liu</u></strong>, Bin Wang and Li Guo <br>
-		<!-- <a href="http://emnlp2014.org/papers/pdf/EMNLP2014118.pdf">[pdf]</a> <a href="" >[slides]</a> -->
-        <div id="clear"></div>
-    </li> 
-    <br>
-	
-	<li>
-        <em><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?reload=true&arnumber=6921626">A Computational Approach to Measuring the Correlation between Expertise and Social Media Influence for Celebrities on Microblogs</a></em>, <a href="http://www.asonam2014.org/">ASONAM 2014</a><br>
-        Xin Zhao, <strong><u>Jing Liu</u></strong>, Yulan He, Chin-Yew Lin and Ji-Rong Wen <br>
-		<!-- <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?reload=true&arnumber=6921626">[pdf]</a> <a href="" >[slides]</a> -->
-        <div id="clear"></div>
-    </li> 
-    <br>
+        <div class="pub-item">
+          <div class="pub-title"><a href="https://arxiv.org/abs/1806.03578">Adaptations of ROUGE and BLEU to Better Evaluate Machine Reading Comprehension Task</a></div>
+          <span class="pub-venue venue-workshop">ACL 2018 Workshop (MRQA)</span>
+          <div class="pub-authors">An Yang, Kai Liu, <strong>Jing Liu</strong>, Yajuan Lyu, Sujian Li</div>
+        </div>
 
-    <li>      
-        <em><a href="http://aclweb.org/anthology/D/D13/D13-1009.pdf">Question Difficulty Estimation in Community Question Answering Services</a></em>, 
-        <a href="http://hum.csse.unimelb.edu.au/emnlp2013/">EMNLP 2013</a><br>
-        <strong><u>Jing Liu</u></strong>, Quan Wang, Chin-Yew Lin and Hsiao-Wuen Hon <br>
-		<!-- <a href="http://aclweb.org/anthology/D/D13/D13-1009.pdf">[pdf]</a> <a href="" >[slides]</a> -->
-        <div id="clear"></div>
-    </li> 
-    <br>
+        <div class="pub-item">
+          <div class="pub-title"><a href="https://arxiv.org/abs/1805.02220">Multi-Passage Machine Reading Comprehension with Cross-Passage Answer Verification</a></div>
+          <span class="pub-venue venue-conf">ACL 2018</span>
+          <div class="pub-authors">Yizhong Wang, Kai Liu, <strong>Jing Liu</strong>, Wei He, Yajuan Lyu, Hua Wu, Sujian Li, Haifeng Wang</div>
+        </div>
 
-    <li>
-        <em><a href="http://aclweb.org/anthology/D/D13/D13-1159.pdf">A Hierarchical Entity-based Approach to Structuralize User Generated Content in Social Media: A Case of Yahoo! Answers</a></em>, 
-        <a href="http://hum.csse.unimelb.edu.au/emnlp2013/">EMNLP 2013</a><br>
-        Baichuan Li, <strong><u>Jing Liu</u></strong>, Chin-Yew Lin, Irwin King and Michael R. Lyu <br>
-		<!-- <a href="http://aclweb.org/anthology/D/D13/D13-1159.pdf">[pdf]</a> <a href="" >[slides]</a> -->
-        <div id="clear"></div>
-    </li>
-    <br>
-	
-    <li>
-        <em><a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2013/02/2013-wsdm-p495-liu.pdf">What's in a Name? An Unsupervised Approach to Link Users across Communities
-</a></em>, 
-        <a href="http://www.wsdm2013.org/" >WSDM 2013</a><br>
-        <strong><u>Jing Liu</u></strong>, Fan Zhang, Xinying Song, Young-In Song, Chin-Yew Lin and Hsiao-Wuen Hon <br>
-        <!-- <a href="http://dl.acm.org/authorize?6896780">[pdf]</a> <a href="" >[slides]</a> <a href="" >[poster]</a> -->
-    </li>    
-    <br>
-	
-    <li>
-        <em><a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2010/10/2012-cikm-2387.pdf">An Unsupervised Method for Author Extraction from Web Pages Containing User-Generated Content</a></em>, 
-        <a href="http://www.cikm2012.org/" >CIKM 2012</a> 
-        <br>
-        <strong><u>Jing Liu</u></strong>, Xinying Song, Jingtian Jiang and Chin-Yew Lin <br>
-        <!-- <a href="http://dl.acm.org/authorize?6868012">[pdf]</a> <a href="" >[poster]</a>
-        <br> -->
-        <div id="clear"></div>
-    </li>
-    <br>
-	
-    
-    <li>
-        <em><a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2011/07/2011-sigir-p425-1.pdf">Competition-based User Expertise Score Estimation</a></em>, 
-        <a href="http://www.sigir2011.org/" >SIGIR 2011</a><br>
-        <strong><u>Jing Liu</u></strong>, Young-In Song and Chin-Yew Lin <br>
-        <!-- <a href="http://dl.acm.org/authorize?6550339">[pdf]</a> <a href="" >[slides]</a><br> -->
-        <div id="clear"></div>
-    </li>
-    <br>
-    
-    <li>
-        <em> <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2010/10/2010-cikm-p39.pdf" title="PDF file" >Automatic Extraction of Web Data Records Containing User-Generated Content</a></em>, 
-        <a href="http://www.yorku.ca/cikm10/" >CIKM 2010</a> 
-        <br>
-        Xinying Song, <strong><u>Jing Liu</u></strong>, Yunbo Cao, Chin-Yew Lin and Hsiao-Wuen Hon <br>
-        <!-- <a href="http://dl.acm.org/authorize?396592">[pdf]</a> 
-        <br>         -->
-        <div id="clear"></div>
-    </li>
-    <br>
+        <div class="pub-item">
+          <div class="pub-title"><a href="http://www.lrec-conf.org/proceedings/lrec2018/pdf/414.pdf">Revisiting Distant Supervision for Relation Extraction</a></div>
+          <span class="pub-venue venue-conf">LREC 2018</span>
+          <div class="pub-authors">Tingsong Jiang, <strong>Jing Liu</strong>, Chin-Yew Lin</div>
+          <div class="pub-links"><a href="http://aka.ms/relationie">[data]</a></div>
+        </div>
+      </div>
 
-    <li>
-        <em> <a href="http://research.nii.ac.jp/ntcir/workshop/OnlineProceedings8/NTCIR/03-NTCIR8-CQA-SongY.pdf" title="PDF file" >Microsoft Research Asia with Redmond at the NTCIR-8 Community QA Pilot Task</a></em>, 
-        <a href="http://research.nii.ac.jp/ntcir/ntcir-ws8/ws-en.html" >NTCIR 2010</a> 
-        <br>
-        Young-In Song, <strong><u>Jing Liu</u></strong>, Tetsuya Sakai, Xinjing Wang, Guwen Feng, Yunbo Cao, Hisami Suzuki and Chin-Yew Lin <br>
-        <!-- <a href="http://research.nii.ac.jp/ntcir/workshop/OnlineProceedings8/NTCIR/03-NTCIR8-CQA-SongY.pdf" title="PDF file">[pdf]</a> 
-        <br> 
-         --><div id="clear"></div>
-    </li>
-    <br>
-    
-    <!-- <h2>Workshops</h2> -->
-</ul>
-</div>
+      <!-- 2017 -->
+      <div class="year-group">
+        <h3>2017</h3>
 
+        <div class="pub-item">
+          <div class="pub-title"><a href="http://www.aclweb.org/anthology/I17-2032.pdf">A Statistical Framework for Product Description Generation</a></div>
+          <span class="pub-venue venue-conf">IJCNLP 2017</span>
+          <div class="pub-authors">Jinpeng Wang, Yutai Hou, <strong>Jing Liu</strong>, Yunbo Cao, Chin-Yew Lin</div>
+        </div>
+      </div>
 
-<a name="dat"></a>
-<div id="dat">
-<h1>Datasets</h1>
-<ul>
-    <li>
-        <a name="luge"></a>
-        <strong>LUGE（千言）<a href="https://luge.ai">[portal]</a></strong> <br>
-        Baidu, CCF (China Computer Federation) and CIPSC (Chinese Information Processing Society of China) jointly lunched the project of LUGE（千言）, that is an open-source project of Chinese NLP benchmarks. 
-        LUGE was featured in videos (<a href="https://www.bilibili.com/video/BV1jk4y1y7Y6?from=search&seid=17592121354154345012">zh-cn</a>, <a href="https://www.bilibili.com/video/av800400457/">en-us</a>) and articles (<a href="https://mp.weixin.qq.com/s/oBMCHkUn4emTToT8014Mdg">zh-cn</a>). If you are interested in contributing to LUGE, pls. contact me. 
-    </li>
-    <br>
-    <li>
-        <a name="dureaderretrieval"></a>
-        <strong>DuReader<sub>retrieval</sub> <a href="https://arxiv.org/abs/2203.10232">[paper]</a><a href="https://github.com/baidu/DuReader/tree/master/DuReader-Retrieval">[data]</a><a href="https://github.com/PaddlePaddle/RocketQA/tree/main/research/DuReader-Retrieval-Baseline">[code/models]</a><a href="https://aistudio.baidu.com/aistudio/competition/detail/157/0/introduction">[LIC2022 - leaderboard]</a></strong>
-        <br>
-        We released DuReader<sub>retrieval</sub>, a large-scale Chinese dataset for passage retrieval. The dataset contains over 90K questions and 8M passages from Baidu Search.
-        We hosted a shared task of DuReader<sub>retrieval</sub> at <a href="http://lic2022.cipsc.org.cn/">2022 Language and Intelligence Challenge</a>, and there were more than 794 teams and more than 910 submissions in the shared task. The shared task was featured in <a href="https://mp.weixin.qq.com/s/oCN_HLlvKFTOZ_sYtdh3rA">zh-cn</a>. 
-    </li>
-    <br>
-    <!-- <li>
-        <a name="dureadervis"></a>
-        <img valign="top" src="images/new.gif" width="40" border="0">
-        <strong>DuReader<sub>vis</sub> <a href="#">[paper]</a><a href="#">[data]</a><a href="#">[code/models]</a><a href="https://aistudio.baidu.com/aistudio/competition/detail/130/0/introduction">[regular leaderboard (open)]</a></strong>
-        <br>
-        We will release a Chinese dataset namely DuReader<sub>vis</sub> for the task of open-domain document visual question answering. The major challenges include (1) long document understanding; (2) noisy texts; and (3) multi-span answer extraction. 
-        The shared task was featured in <a href="https://mp.weixin.qq.com/s/IozyUMvW9lJ9RLQeVNKhow">zh-cn</a>. 
-    </li>
-    <br> -->
-    <li>
-        <a name="duqm"></a>
-        <strong>DuQM <a href="https://arxiv.org/pdf/2112.08609.pdf">[paper]</a><a href="https://www.luge.ai/#/luge/dataDetail?id=27">[data]</a><a href="https://github.com/baidu/DuReader/tree/master/DuQM">[code/models]</a><a href="https://aistudio.baidu.com/aistudio/competition/detail/130/0/introduction">[regular leaderboard (open)]</a></strong><a href="https://www.datafountain.cn/competitions/516">[CCF BDCI 2021 - leaderboard (closed)]</a>
-        <br>
-        We released a Chinese dataset namely DuQM towards challenging the question matching models from multiple aspects, including lexical semantics, syntactic structure, misspelling and speech filler. We hosted a shared task of DuQM at <a href="https://www.datafountain.cn/special/BDCI2021">2021 CCF Big Data & Computing Intelligence Contest</a>, and there were more than 4,000 registered teams and more than 9,000 submissions in the shared task. The shared task was featured in <a href="https://mp.weixin.qq.com/s/IozyUMvW9lJ9RLQeVNKhow">zh-cn</a>. 
-    </li>
-    <br>
-    <li>
-        <a name="dureaderchecklist"></a>
-        <strong>DuReader<sub>checklist</sub> <a href="https://www.luge.ai/#/luge/dataDetail?id=3">[data]</a><a href="https://github.com/baidu/DuReader/tree/master/DuReader-Checklist">[code/models]</a><a href="https://aistudio.baidu.com/aistudio/competition/detail/49/0/task-definition">[regular leaderboard (open)]</a></strong><a href="https://aistudio.baidu.com/aistudio/competition/detail/66">[LIC2021 - leaderboard(closed)]</a>
-        <br>
-        We released a Chinese dataset namely DuReader<sub>checklist</sub> towards challenging the machine reading comprehension models from multiple aspects, including understanding of vocabulary, phrase, semantic role, reasoning and so on. We hosted a shared task of DuReader<sub>checklist</sub> at <a href="http://lic2021.ccf.org.cn/">2021 Language and Intelligence Challenge</a>, and there were more than 1,080 teams and more than 4,800 submissions in the shared task. The shared task was featured in <a href="https://mp.weixin.qq.com/s/4Gmvohuzwayhfa-MH1pH0g">zh-cn</a>. 
-    </li>
-    <br>
-    <li>
-        <a name="dureaderrobust"></a>
-        <strong>DuReader<sub>robust</sub> <a href="https://arxiv.org/pdf/2004.11142">[paper]</a><a href="https://www.luge.ai/#/luge/dataDetail?id=1">[data]</a><a href="https://github.com/baidu/DuReader/tree/master/DuReader-Robust">[code/models]</a><a href="https://aistudio.baidu.com/aistudio/competition/detail/49/0/task-definition">[regular leaderboard (open)]</a></strong><a href="https://aistudio.baidu.com/aistudio/competition/detail/28?isFromCcf=true">[LIC2020 - leaderboard (closed)]</a>
-        <br>
-        We released a Chinese dataset namely DuReader<sub>robust</sub> towards evaluating the robustness of
-        machine reading comprehension models. We hosted a shared task of DuReader<sub>robust</sub> at <a href="http://lic2020.cipsc.org.cn/">2020 Language and Intelligence Challenge</a>, and there were more than 1,500 teams and more than 4,600 submissions in the shared task. The shared task was featured in <a href="https://m.gmw.cn/toutiao/2020-11/13/content_34367011.htm">zh-cn</a>. 
-    </li>
-    <!-- <li>
-        <strong>DuReader</strong>: We released a Chinese dataset namely <strong>DuReader<sub>robust</sub></strong> <a href="https://arxiv.org/pdf/2004.11142">[paper]</a><a href="https://www.luge.ai/#/luge/dataDetail?id=1">[data]</a><a href="https://github.com/baidu/DuReader/tree/master/DuReader-Robust">[code/models]</a> towards evaluating the robustness of
-        machine reading comprehension models. We hosted a shared task of DuReader<sub>robust</sub> <a href="https://aistudio.baidu.com/aistudio/competition/detail/28?isFromCcf=true">[leaderboard]</a> at <a href="http://lic2020.cipsc.org.cn/">2020 Language and Intelligence Challenge</a>, and there were more than 1,500 teams and more than 4,600 submissions in the shared task. The shared task was featured in <a href="https://m.gmw.cn/toutiao/2020-11/13/content_34367011.htm">zh-cn</a>. 
-    </li> -->
-</ul>
-</div>
+      <!-- 2016 -->
+      <div class="year-group">
+        <h3>2016</h3>
 
+        <div class="pub-item">
+          <div class="pub-title"><a href="http://www.aclweb.org/anthology/P16-1037.pdf">News Citation Recommendation with Implicit and Explicit Semantics</a></div>
+          <span class="pub-venue venue-conf">ACL 2016</span>
+          <div class="pub-authors">Hao Peng, <strong>Jing Liu</strong>, Chin-Yew Lin</div>
+        </div>
 
+        <div class="pub-item">
+          <div class="pub-title"><a href="http://www.aclweb.org/anthology/P/P16/P16-1124.pdf">Knowledge Base Completion via Coupled Path Ranking</a></div>
+          <span class="pub-venue venue-conf">ACL 2016</span>
+          <div class="pub-authors">Quan Wang, <strong>Jing Liu</strong>, Yuanfei Luo, Bin Wang, Chin-Yew Lin</div>
+        </div>
 
+        <div class="pub-item">
+          <div class="pub-title"><a href="http://aclweb.org/anthology/P16-1116.pdf">RBPB: Regularization-Based Pattern Balancing Method for Event Extraction</a></div>
+          <span class="pub-venue venue-conf">ACL 2016</span>
+          <div class="pub-authors">Lei Sha, <strong>Jing Liu</strong>, Chin-Yew Lin, Sujian Li, Baobao Chang, Zhifang Sui</div>
+        </div>
+      </div>
 
-<div id="Activities">
-    <h1>Professional Activities</h1>
-    <ul>
-    <li>Area Chair: ACL 2021 (Question Answering), AACL 2022 (Question Answering)</li>
-    <li>Session Chair: AACL 2020 (Question Answering)</li>
-    <li>Program commitee/reviewer, ACL, EMNLP, NAACL, EACL, AACL, SIGIR, KDD, WSDM, WWW, CIKM, ICWSM, ACM Transactions on the Web (TWEB), ACM Transactions on Intelligent Systems and Technology (TIST), ACM Transactions on Information Systems (TOIS), Frontiers of Computer Science (FCS)</li>
-    <!-- <li>Program commitee/reviewer, EMNLP 2012, EMNLP 2013, ACL 2014, NAACL 2015, ACL 2015, EMNLP 2015, ACL 2016, EACL 2017, EMNLP 2017, NAACL 2018, ACL 2018, ACL 2019, ACL 2020, EMNLP 2020, AACL 2020, NAACL 2021, ACM Transactions on the Web (TWEB), ACM Transactions on Intelligent Systems and Technology (TIST), Frontiers of Computer Science (FCS)</li>  -->
-    <!-- <li>Reviewer, ACM Transactions on the Web (TWEB), ACM Transactions on Intelligent Systems and Technology (TIST), Frontiers of Computer Science (FCS)</li>  -->
-    <!-- <li>Secondary reviewer, TOIS, CIKM 2010, WWW 2012, SIGIR 2012, SIGIR 2013, WSDM 2014, WWW 2014, EACL 2014, ICWSM 2014, KDD 2014, WWW 2015, KDD 2015</li>  -->
-    <!-- <li>December 2019, NeurIPS'19, Vancouver, Canada</li>
-    <li>November 2019, EMNLP'19, Hongkong, China</li>
-    <li>July 2018, ACL'18, Melbourne, Australia</li>
-    <li>August 2016, ACL'16, Berlin, Bermany</li>
-	<li>February 2013, WSDM'13, Rome, Italy</li> 
-	<li>October 2012, CIKM'12, Hawii, USA</li> 
-	<li>July 2011, SIGIR'11, Beijing, China</li>  -->
+      <!-- 2015 -->
+      <div class="year-group">
+        <h3>2015</h3>
+
+        <div class="pub-item">
+          <div class="pub-title"><a href="https://jyunyu.csie.org/docs/pubs/cikm2015paper.pdf">Improving Ranking Consistency for Web Search by Leveraging Knowledge Base and Search Logs</a></div>
+          <span class="pub-venue venue-conf">CIKM 2015</span>
+          <div class="pub-authors">Jyun-Yu Jiang, <strong>Jing Liu</strong>, Chin-Yew Lin, Pu-Jen Cheng</div>
+        </div>
+      </div>
+
+      <!-- 2014 -->
+      <div class="year-group">
+        <h3>2014</h3>
+
+        <div class="pub-item">
+          <div class="pub-title"><a href="http://www.aclweb.org/anthology/D14-1118.pdf">A Regularized Competition Model for Question Difficulty Estimation in Community Question Answering Services</a></div>
+          <span class="pub-venue venue-conf">EMNLP 2014</span>
+          <div class="pub-authors">Quan Wang, <strong>Jing Liu</strong>, Bin Wang, Li Guo</div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?reload=true&arnumber=6921626">A Computational Approach to Measuring the Correlation between Expertise and Social Media Influence for Celebrities on Microblogs</a></div>
+          <span class="pub-venue venue-conf">ASONAM 2014</span>
+          <div class="pub-authors">Xin Zhao, <strong>Jing Liu</strong>, Yulan He, Chin-Yew Lin, Ji-Rong Wen</div>
+        </div>
+      </div>
+
+      <!-- 2013 -->
+      <div class="year-group">
+        <h3>2013</h3>
+
+        <div class="pub-item">
+          <div class="pub-title"><a href="http://aclweb.org/anthology/D/D13/D13-1009.pdf">Question Difficulty Estimation in Community Question Answering Services</a></div>
+          <span class="pub-venue venue-conf">EMNLP 2013</span>
+          <div class="pub-authors"><strong>Jing Liu</strong>, Quan Wang, Chin-Yew Lin, Hsiao-Wuen Hon</div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title"><a href="http://aclweb.org/anthology/D/D13/D13-1159.pdf">A Hierarchical Entity-based Approach to Structuralize User Generated Content in Social Media: A Case of Yahoo! Answers</a></div>
+          <span class="pub-venue venue-conf">EMNLP 2013</span>
+          <div class="pub-authors">Baichuan Li, <strong>Jing Liu</strong>, Chin-Yew Lin, Irwin King, Michael R. Lyu</div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title"><a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2013/02/2013-wsdm-p495-liu.pdf">What's in a Name? An Unsupervised Approach to Link Users across Communities</a></div>
+          <span class="pub-venue venue-conf">WSDM 2013</span>
+          <div class="pub-authors"><strong>Jing Liu</strong>, Fan Zhang, Xinying Song, Young-In Song, Chin-Yew Lin, Hsiao-Wuen Hon</div>
+        </div>
+      </div>
+
+      <!-- 2012 -->
+      <div class="year-group">
+        <h3>2012</h3>
+
+        <div class="pub-item">
+          <div class="pub-title"><a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2010/10/2012-cikm-2387.pdf">An Unsupervised Method for Author Extraction from Web Pages Containing User-Generated Content</a></div>
+          <span class="pub-venue venue-conf">CIKM 2012</span>
+          <div class="pub-authors"><strong>Jing Liu</strong>, Xinying Song, Jingtian Jiang, Chin-Yew Lin</div>
+        </div>
+      </div>
+
+      <!-- 2011 -->
+      <div class="year-group">
+        <h3>2011</h3>
+
+        <div class="pub-item">
+          <div class="pub-title"><a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2011/07/2011-sigir-p425-1.pdf">Competition-based User Expertise Score Estimation</a></div>
+          <span class="pub-venue venue-conf">SIGIR 2011</span>
+          <div class="pub-authors"><strong>Jing Liu</strong>, Young-In Song, Chin-Yew Lin</div>
+        </div>
+      </div>
+
+      <!-- 2010 -->
+      <div class="year-group">
+        <h3>2010</h3>
+
+        <div class="pub-item">
+          <div class="pub-title"><a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2010/10/2010-cikm-p39.pdf">Automatic Extraction of Web Data Records Containing User-Generated Content</a></div>
+          <span class="pub-venue venue-conf">CIKM 2010</span>
+          <div class="pub-authors">Xinying Song, <strong>Jing Liu</strong>, Yunbo Cao, Chin-Yew Lin, Hsiao-Wuen Hon</div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title"><a href="http://research.nii.ac.jp/ntcir/workshop/OnlineProceedings8/NTCIR/03-NTCIR8-CQA-SongY.pdf">Microsoft Research Asia with Redmond at the NTCIR-8 Community QA Pilot Task</a></div>
+          <span class="pub-venue venue-workshop">NTCIR 2010</span>
+          <div class="pub-authors">Young-In Song, <strong>Jing Liu</strong>, Tetsuya Sakai, Xinjing Wang, Guwen Feng, Yunbo Cao, Hisami Suzuki, Chin-Yew Lin</div>
+        </div>
+      </div>
+    </div><!-- end older-pubs -->
+
+  </div>
+</section>
+
+<!-- ========== Experience & Education ========== -->
+<section class="bg-gray" id="experience">
+  <div class="container">
+    <h2>Experience</h2>
+    <ul class="experience-list">
+      <li><strong>Distinguished Architect</strong>, Baidu &mdash; Dec 2017 &ndash; present</li>
+      <li><strong>Researcher</strong>, Microsoft Research Asia &mdash; Sep 2014 &ndash; Dec 2017</li>
+      <li><strong>Intern</strong>, Microsoft Research Asia &mdash; Jul 2009 &ndash; Sep 2014</li>
     </ul>
-    <div id="clear"></div>
-</div>
 
-<a name="work"></a>
-<div id="working">
-	<h1>Working Experience</h1>
-	<ul>
-    <li> Principal Architect, Baidu NLP, Dec. 2017 - present </li>
-    <li> Researcher, Microsoft Research Asia, Sep. 2014 - Dec. 2017 </li>
-	<li> Intern, Microsoft Research Asia, Jul. 2009 - Sep. 2014 </li>
-	</ul>
-</div>
-
-
-<a name="edu"></a>
-<div id="educations">
-	<h1>Educations</h1>
-	<ul>
-    <li> PhD, Computer Science, Harbin Institute of Technology, Sep. 2009 - Sep. 2014 </li>
-    <li> M.Sc, Computer Science, Harbin Institute of Technology, Sep. 2007 - Jul. 2009 </li>
-	<li> B.Sc, Computer Science, Xidian University, Sep. 2003 - Jul. 2007 </li>
+    <h2 style="margin-top:32px;">Education</h2>
+    <ul class="education-list">
+      <li><strong>Ph.D.</strong> in Computer Science, Harbin Institute of Technology &mdash; Sep 2009 &ndash; Sep 2014</li>
+      <li><strong>M.Sc.</strong> in Computer Science, Harbin Institute of Technology &mdash; Sep 2007 &ndash; Jul 2009</li>
+      <li><strong>B.Sc.</strong> in Computer Science, Xidian University &mdash; Sep 2003 &ndash; Jul 2007</li>
     </ul>
-    <br>
-</div>
+  </div>
+</section>
 
-
-
-
-<!-- <a name="pat"></a> -->
-<!-- <div id="line"></div> -->
-
-<!-- <div id="Patents">
-    <h1>Patents</h1>
-
-    <ul>
-	<li>
-        <em> <a href="https://www.google.com/patents/US20130097178">Question and Answer Forum Techniques</a></em>, 
-        <a>US Patent 2013</a> 
-        <br>
-		Young-In Song, <strong><u>Jing Liu</u></strong>, Chin-Yew Lin and Tetsuya Sakai <br>       
-		<a href="https://www.google.com/patents/US20130097178"> US20130097178 A1</a> 
-        <br>
-        <div id="clear"></div>
-    </li>
-	<br>
-	<li>
-        <em> <a href="http://www.google.com/patents/US20130262453">Estimating Thread Participant Expertise Using A Competition-Based Model</a></em>, 
-        <a>US Patent 2013</a> 
-        <br>
-		Chin-Yew Lin, Young-In Song and <strong><u>Jing Liu</u></strong> <br>       
-		<a href="http://www.google.com/patents/US20130262453"> US20130262453 A1</a> 
-        <br>
-        <div id="clear"></div>
-    </li>
+<!-- ========== Professional Activities ========== -->
+<section class="bg-white" id="activities">
+  <div class="container">
+    <h2>Professional Activities</h2>
+    <ul class="activity-list">
+      <li><strong>Area Chair:</strong> ACL 2021 (Question Answering), AACL 2022 (Question Answering)</li>
+      <li><strong>Session Chair:</strong> AACL 2020 (Question Answering)</li>
+      <li><strong>Reviewer:</strong> ACL, EMNLP, NAACL, EACL, AACL, SIGIR, KDD, WSDM, WWW, CIKM, ICWSM, ACM TWEB, ACM TIST, ACM TOIS, FCS</li>
     </ul>
-    <div id="clear"></div>
-</div> -->
+  </div>
+</section>
 
-<a name="act"></a>
-<!-- <div id="line"></div> -->
+<!-- ========== Datasets ========== -->
+<section class="bg-gray" id="datasets">
+  <div class="container">
+    <h2>Datasets</h2>
 
-<!-- <a name="links"></a>
-<div id="line"></div> -->
+    <div class="dataset-item">
+      <h3>LUGE <a href="https://luge.ai">[portal]</a></h3>
+      <p>An open-source project of Chinese NLP benchmarks, jointly launched by Baidu, CCF, and CIPSC. LUGE aims to provide comprehensive evaluations across multiple NLP tasks.</p>
+    </div>
 
-<!-- <div id="Friends">
-    <h1>Friends</h1>
+    <div class="dataset-item">
+      <h3>DuReader<sub>retrieval</sub> <a href="https://arxiv.org/abs/2203.10232">[paper]</a> <a href="https://github.com/baidu/DuReader/tree/master/DuReader-Retrieval">[data]</a> <a href="https://github.com/PaddlePaddle/RocketQA/tree/main/research/DuReader-Retrieval-Baseline">[code]</a></h3>
+      <p>A large-scale Chinese dataset for passage retrieval, containing over 90K questions and 8M passages from Baidu Search.</p>
+    </div>
 
-<ul>
-<li><a href="https://sites.google.com/site/quanwang1012/">Quan Wang</a>&nbsp;(Chinese Academy of Sciences @ Beijing)&nbsp;&nbsp;&nbsp;</li>
-<li><a href="http://net.pku.edu.cn/~zhaoxin/">Xin Zhao</a>&nbsp;(Renmin University @ Beijing)&nbsp;&nbsp;&nbsp;</li>
-<li><a href="https://sites.google.com/site/zhfan555/">Fan Zhang</a>&nbsp;(Google @ Mountain View)&nbsp;&nbsp;&nbsp;</li>
-<li><a href="https://sites.google.com/site/zhenliao2012/">Zhen Liao</a>&nbsp;(Facebook @ Menlo Park)&nbsp;&nbsp;&nbsp;</li>
-<li><a href="http://nlp.suda.edu.cn/~zoubowei/">Bowei Zou</a>&nbsp;(Soochow University @ Suzhou)&nbsp;&nbsp;&nbsp;</li>
-<li><a href="http://ir.hit.edu.cn/~rjfu/">Ruiji Fu</a>&nbsp;(iFLYTEK @ Beijing)&nbsp;&nbsp;&nbsp;</li>
-</ul>
-	<br>
-    <div id="clear"></div>
-</div>-->
+    <div class="dataset-item">
+      <h3>DuQM <a href="https://arxiv.org/abs/2112.08609">[paper]</a> <a href="https://www.luge.ai/#/luge/dataDetail?id=27">[data]</a> <a href="https://github.com/baidu/DuReader/tree/master/DuQM">[code]</a></h3>
+      <p>A Chinese dataset for evaluating the robustness of question matching models across lexical, syntactic, and semantic dimensions.</p>
+    </div>
 
-</div> 
+    <div class="dataset-item">
+      <h3>DuReader<sub>checklist</sub> <a href="https://www.luge.ai/#/luge/dataDetail?id=3">[data]</a> <a href="https://github.com/baidu/DuReader/tree/master/DuReader-Checklist">[code]</a></h3>
+      <p>A Chinese dataset for evaluating machine reading comprehension models across multiple dimensions including vocabulary, phrase, semantic role, and reasoning.</p>
+    </div>
 
-<div id="design">Last updated <a>Jan 30 2022</a> (This template was originally designed by <a href="http://www.cs.cmu.edu/~muli/">Mu Li</a>.)</div>
+    <div class="dataset-item">
+      <h3>DuReader<sub>robust</sub> <a href="https://arxiv.org/abs/2004.11142">[paper]</a> <a href="https://www.luge.ai/#/luge/dataDetail?id=1">[data]</a> <a href="https://github.com/baidu/DuReader/tree/master/DuReader-Robust">[code]</a></h3>
+      <p>A Chinese dataset for evaluating the robustness and generalization of machine reading comprehension models in real-world applications.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== Footer ========== -->
+<footer>
+  <div class="container">
+    Last updated: Mar 2026
+  </div>
+</footer>
 
 </body>
 </html>
