@@ -101,7 +101,7 @@
 <!-- ========== Selected Publications (2023+) ========== -->
 <section class="publications-selected bg-white" id="publications">
   <div class="container">
-    <h2>Selected Publications <span style="font-size:0.85rem; font-weight:400; color:#888;">(2023&ndash;present)</span></h2>
+    <h2>Selected Publications <span style="font-size:0.85rem; font-weight:400; color:var(--text-muted);">(2023&ndash;present)</span></h2>
 
     <!-- 2026 -->
     <div class="year-group">
@@ -201,7 +201,7 @@
     <div id="older-pubs" class="older-pubs">
 
       <!-- 2022 -->
-      <div class="year-group" style="margin-top:28px;">
+      <div class="year-group" style="margin-top:28px">
         <h3>2022</h3>
 
         <div class="pub-item">
@@ -573,6 +573,16 @@
     Last updated: Mar 2026
   </div>
 </footer>
+
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('section, .pub-item, .hiring-card, .dataset-item').forEach(el => el.classList.add('reveal'));
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('revealed'); io.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  }
+</script>
 
 </body>
 </html>
